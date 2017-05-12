@@ -28,6 +28,9 @@ Plug 'terryma/vim-expand-region'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'posva/vim-vue'
+Plug 'gregsexton/MatchTag'
+Plug 'pangloss/vim-javascript'
+Plug 'othree/html5.vim'
 call plug#end()
 
 
