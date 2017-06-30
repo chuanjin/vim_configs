@@ -31,6 +31,8 @@ Plug 'posva/vim-vue'
 Plug 'gregsexton/MatchTag'
 Plug 'pangloss/vim-javascript'
 Plug 'othree/html5.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 
