@@ -1,7 +1,7 @@
 set shell=/bin/zsh
 
-" Show line numbers by default
-set number
+" Show relative line numbers by default
+set rnu
 
 " Remove the red line at 80 column
 let g:pymode_options_colorcolumn = 0
