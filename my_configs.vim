@@ -1,6 +1,7 @@
 set shell=/bin/zsh
 
 " Show line numbers by default
+set rnu
 set number
 
 " Remove the red line at 80 column
@@ -72,9 +73,9 @@ map M <Plug>(expand_region_expand)
 map L <Plug>(expand_region_shrink)
 
 call expand_region#custom_text_objects({
-      \ "\/\\n\\n\<CR>": 1, 
-      \ 'a]' :1, 
-      \ 'ab' :1, 
+      \ "\/\\n\\n\<CR>": 1,
+      \ 'a]' :1,
+      \ 'ab' :1,
       \ 'aB' :1,
       \ 'ii' :0,
       \ 'ai' :0,
@@ -120,13 +121,13 @@ let g:lightline = {
       \ }
       \ }
 
-function! MyFiletype()
-  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
-endfunction
+"function! MyFiletype()
+"  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+"endfunction
 
-function! MyFileformat()
-  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
-endfunction
+"function! MyFileformat()
+"  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+"endfunction
 
 
 let g:NERDTreeIndicatorMapCustom = {
@@ -144,3 +145,8 @@ let g:NERDTreeIndicatorMapCustom = {
 
 set guifont=Sauce\ Code\ Pro\ Nerd\ Font\ Complete:h14
 set encoding=utf8
+let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
+
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreePatternMatchHighlightFullName = 1
