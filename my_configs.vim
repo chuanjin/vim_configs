@@ -1,6 +1,6 @@
 set shell=/bin/zsh
 
-" Show line numbers by default
+" Show relative line numbers by default
 set rnu
 set number
 
