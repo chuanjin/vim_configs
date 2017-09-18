@@ -4,6 +4,11 @@ set shell=/bin/zsh
 set rnu
 set number
 
+inoremap <C-A> <Home>
+inoremap <C-E> <End>
+vnoremap <C-A> <Home>
+vnoremap <C-E> <End>
+
 " Remove the red line at 80 column
 let g:pymode_options_colorcolumn = 0
 
