@@ -126,6 +126,20 @@ let g:lightline = {
       \ }
       \ }
 
+
+" Replace filename component of Lightline statusline
+let g:lightline = {
+      \ 'component_function': {
+      \   'filename': 'FilenameForLightline'
+      \ }
+      \ }
+ 
+" Show full path of filename
+function! FilenameForLightline()
+    return expand('%')
+endfunction
+
+
 "function! MyFiletype()
 "  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
 "endfunction
