@@ -1,5 +1,10 @@
 set shell=/bin/zsh
 
+" Map Caps Lock to Escape when enter vim
+au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+" Returns normal functionality to Caps Lock when quit vim
+au VimLeave * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+
 " Show relative line numbers by default
 set rnu
 set number
