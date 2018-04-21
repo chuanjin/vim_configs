@@ -1,9 +1,9 @@
 set shell=/bin/zsh
 
 " Map Caps Lock to Escape when enter vim
-au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 " Returns normal functionality to Caps Lock when quit vim
-au VimLeave * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
 
 " Show relative line numbers by default
 set rnu
@@ -25,6 +25,7 @@ let g:NERDTreeWinPos = "left"
 colorscheme gruvbox
 if has('gui_running')
     set background=light
+    set guifont=Source\ Code\ Pro\ for\ Powerline\ 14
 else
     set background=dark
 endif
@@ -83,13 +84,13 @@ map M <Plug>(expand_region_expand)
 map L <Plug>(expand_region_shrink)
 
 call expand_region#custom_text_objects({
-      \ "\/\\n\\n\<CR>": 1,
-      \ 'a]' :1,
-      \ 'ab' :1,
-      \ 'aB' :1,
-      \ 'ii' :0,
-      \ 'ai' :0,
-      \ })
+            \ "\/\\n\\n\<CR>": 1,
+            \ 'a]' :1,
+            \ 'ab' :1,
+            \ 'aB' :1,
+            \ 'ii' :0,
+            \ 'ai' :0,
+            \ })
 
 
 set statusline+=%#warningmsg#
@@ -125,20 +126,20 @@ let g:indentLine_color_dark = 1 " (default: 2)
 
 
 let g:lightline = {
-      \ 'component_function': {
-      \   'filetype': 'MyFiletype',
-      \   'fileformat': 'MyFileformat',
-      \ }
-      \ }
+            \ 'component_function': {
+            \   'filetype': 'MyFiletype',
+            \   'fileformat': 'MyFileformat',
+            \ }
+            \ }
 
 
 " Replace filename component of Lightline statusline
 let g:lightline = {
-      \ 'component_function': {
-      \   'filename': 'FilenameForLightline'
-      \ }
-      \ }
- 
+            \ 'component_function': {
+            \   'filename': 'FilenameForLightline'
+            \ }
+            \ }
+
 " Show full path of filename
 function! FilenameForLightline()
     return expand('%')
@@ -155,19 +156,18 @@ endfunction
 
 
 let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ 'Ignored'   : '☒',
-    \ "Unknown"   : "?"
-    \ }
+            \ "Modified"  : "✹",
+            \ "Staged"    : "✚",
+            \ "Untracked" : "✭",
+            \ "Renamed"   : "➜",
+            \ "Unmerged"  : "═",
+            \ "Deleted"   : "✖",
+            \ "Dirty"     : "✗",
+            \ "Clean"     : "✔︎",
+            \ 'Ignored'   : '☒',
+            \ "Unknown"   : "?"
+            \ }
 
-set guifont=Sauce\ Code\ Pro\ Nerd\ Font\ Complete:h14
 set encoding=utf8
 let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
 
@@ -177,7 +177,9 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 
 
 if exists('+colorcolumn')
-  set colorcolumn=80
+    set colorcolumn=80
 else
-  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
+
+set textwidth=80
