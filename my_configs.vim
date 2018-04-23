@@ -14,6 +14,11 @@ inoremap <C-E> <End>
 vnoremap <C-A> <Home>
 vnoremap <C-E> <End>
 
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+noremap <Leader>Y "+y
+noremap <Leader>P "+p
+
 " Remove the red line at 80 column
 let g:pymode_options_colorcolumn = 0
 
