@@ -36,6 +36,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'junegunn/goyo.vim'
 "Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
