@@ -19,6 +19,15 @@ noremap <Leader>p "*p
 noremap <Leader>Y "+y
 noremap <Leader>P "+p
 
+nmap     <C-S>f <Plug>CtrlSFPrompt
+vmap     <C-S>f <Plug>CtrlSFVwordPath
+vmap     <C-S>e <Plug>CtrlSFVwordExec
+nmap     <C-S>c <Plug>CtrlSFCwordPath
+nmap     <C-S>p <Plug>CtrlSFPwordPath
+nnoremap <C-S>o :CtrlSFOpen<CR>
+nnoremap <C-S>t :CtrlSFToggle<CR>
+inoremap <C-S>t <Esc>:CtrlSFToggle<CR>
+
 " Remove the red line at 80 column
 let g:pymode_options_colorcolumn = 0
 

@@ -14,7 +14,7 @@ Plug 'tpope/vim-rails'
 Plug 'elixir-lang/vim-elixir'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-commentary'
-Plug 'mileszs/ack.vim'
+" Plug 'mileszs/ack.vim' replaced by ctrlsf
 Plug 'nvie/vim-flake8'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
@@ -37,6 +37,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'junegunn/goyo.vim'
+Plug 'dyng/ctrlsf.vim'
 "Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
