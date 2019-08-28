@@ -39,6 +39,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'junegunn/goyo.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'Shougo/echodoc.vim'
+Plug 'mhinz/vim-startify'
 
 "Plug 'ryanoasis/vim-devicons'
 call plug#end()
