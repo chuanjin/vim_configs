@@ -38,6 +38,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'junegunn/goyo.vim'
 Plug 'dyng/ctrlsf.vim'
+Plug 'Shougo/echodoc.vim'
+
 "Plug 'ryanoasis/vim-devicons'
 call plug#end()
 

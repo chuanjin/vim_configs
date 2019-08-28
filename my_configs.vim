@@ -207,3 +207,8 @@ let g:vim_markdown_conceal = 0
 " disable math tex conceal feature
 let g:tex_conceal = ""
 let g:vim_markdown_math = 1
+
+
+" Or, you could disable showmode alltogether.
+set noshowmode
+let g:echodoc_enable_at_startup = 1
