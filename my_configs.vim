@@ -196,7 +196,7 @@ else
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
-set textwidth=80
+" set textwidth=80
 
 " disable header folding
 let g:vim_markdown_folding_disabled = 1
