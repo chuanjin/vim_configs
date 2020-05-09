@@ -1,7 +1,13 @@
 set shell=/bin/zsh
 
+"enable mouse
+set mouse=a
+"share clipboard with system
+set clipboard=unnamedplus
+
 " Map Caps Lock to Escape when enter vim
 au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+
 " Returns normal functionality to Caps Lock when quit vim
 " au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
 
@@ -38,8 +44,8 @@ let g:NERDTreeWinPos = "left"
 " Colorscheme
 colorscheme gruvbox
 if has('gui_running')
-    set background=light
-    set guifont=Source\ Code\ Pro\ for\ Powerline\ 14
+    set background=dark
+    set guifont=Source\ Code\ Pro\ Bold\ 12
 else
     set background=dark
 endif

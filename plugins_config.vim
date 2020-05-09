@@ -40,6 +40,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'Shougo/echodoc.vim'
 Plug 'mhinz/vim-startify'
+Plug 'junegunn/vim-peekaboo'
 
 "Plug 'ryanoasis/vim-devicons'
 call plug#end()
