@@ -1,9 +1,19 @@
 set shell=/bin/zsh
 
+
+" 1 tab == 2 spaces
+set shiftwidth=2
+set tabstop=2
+
 "enable mouse
 set mouse=a
 "share clipboard with system
 set clipboard=unnamedplus
+"highlight current lines
+set cursorline
+
+"enable true colors support
+set  termguicolors
 
 " Map Caps Lock to Escape when enter vim
 au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
@@ -43,6 +53,7 @@ let g:NERDTreeWinPos = "left"
 
 " Colorscheme
 colorscheme gruvbox
+" colorscheme snazzy
 if has('gui_running')
     set background=dark
     set guifont=Source\ Code\ Pro\ Bold\ 12
@@ -145,14 +156,6 @@ let g:indentLine_color_tty_light = 7 " (default: 4)
 let g:indentLine_color_dark = 1 " (default: 2)
 
 
-let g:lightline = {
-            \ 'component_function': {
-            \   'filetype': 'MyFiletype',
-            \   'fileformat': 'MyFileformat',
-            \ }
-            \ }
-
-
 " Replace filename component of Lightline statusline
 let g:lightline = {
             \ 'component_function': {
@@ -164,15 +167,6 @@ let g:lightline = {
 function! FilenameForLightline()
     return expand('%')
 endfunction
-
-
-"function! MyFiletype()
-"  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
-"endfunction
-
-"function! MyFileformat()
-"  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
-"endfunction
 
 
 let g:NERDTreeIndicatorMapCustom = {
@@ -214,7 +208,29 @@ let g:vim_markdown_conceal = 0
 let g:tex_conceal = ""
 let g:vim_markdown_math = 1
 
+let g:vim_markdown_conceal_code_blocks = 0
 
 " Or, you could disable showmode alltogether.
 set noshowmode
 let g:echodoc_enable_at_startup = 1
+
+" Can be enabled or disabled
+let g:webdevicons_enable_nerdtree = 1
+let g:webdevicons_conceal_nerdtree_brackets = 1
+let g:webdevicons_enable_startify = 1
+let g:webdevicons_enable_ctrlp = 1
+
+let g:lightline = {
+      \ 'component_function': {
+      \   'filetype': 'MyFiletype',
+      \   'fileformat': 'MyFileformat',
+      \ }
+      \ }
+
+function! MyFiletype()
+  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+endfunction
+
+function! MyFileformat()
+  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+endfunction

@@ -5,7 +5,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Chiel92/vim-autoformat'
 Plug 'Valloric/YouCompleteMe'
 Plug 'ivalkeen/vim-ctrlp-tjump'
@@ -43,8 +43,8 @@ Plug 'Shougo/echodoc.vim'
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/vim-peekaboo'
 Plug 'jlanzarotta/bufexplorer'
-
-"Plug 'ryanoasis/vim-devicons'
+" Always load the vim-devicons as the last one
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 
