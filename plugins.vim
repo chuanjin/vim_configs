@@ -2,12 +2,11 @@
 " => plugins
 """""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
-
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Chiel92/vim-autoformat'
-Plug 'Valloric/YouCompleteMe'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ivalkeen/vim-ctrlp-tjump'
 Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-rails'
@@ -43,6 +42,7 @@ Plug 'Shougo/echodoc.vim'
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/vim-peekaboo'
 Plug 'jlanzarotta/bufexplorer'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 " Always load the vim-devicons as the last one
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
