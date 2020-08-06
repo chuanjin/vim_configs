@@ -13,7 +13,8 @@ Plug 'tpope/vim-rails'
 Plug 'elixir-lang/vim-elixir'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-commentary'
-" Plug 'mileszs/ack.vim' replaced by ctrlsf
+Plug 'voldikss/vim-floaterm'
+Plug 'mileszs/ack.vim'
 Plug 'nvie/vim-flake8'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
@@ -42,6 +43,7 @@ Plug 'Shougo/echodoc.vim'
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/vim-peekaboo'
 Plug 'jlanzarotta/bufexplorer'
+Plug 'itchyny/vim-cursorword'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 " Always load the vim-devicons as the last one
 Plug 'ryanoasis/vim-devicons'

@@ -36,6 +36,8 @@ noremap <Leader>p "*p
 noremap <Leader>Y "+y
 noremap <Leader>P "+p
 
+noremap <Leader>d *
+
 nmap     <C-S>f <Plug>CtrlSFPrompt
 vmap     <C-S>f <Plug>CtrlSFVwordPath
 vmap     <C-S>e <Plug>CtrlSFVwordExec
@@ -51,6 +53,8 @@ let g:pymode_options_colorcolumn = 0
 " NERT tree show from left
 let g:NERDTreeWinPos = "left"
 
+" Turn on gitgutter
+let g:gitgutter_enabled = 1
 
 " Colorscheme
 colorscheme gruvbox
@@ -65,6 +69,7 @@ endif
 
 " The Silver Searcher
 if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
 
@@ -540,3 +545,4 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " To get correct comment highlighting for jsonc
 autocmd FileType json syntax match Comment +\/\/.\+$+
+
