@@ -57,6 +57,7 @@ let g:NERDTreeWinPos = "left"
 let g:gitgutter_enabled = 1
 
 " Colorscheme
+" colorscheme nord
 colorscheme gruvbox
 " colorscheme snazzy
 if has('gui_running')
