@@ -25,6 +25,16 @@ au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 " Show relative line numbers by default
 set rnu
 set number
+set mouse=a
+
+filetype plugin indent on
+" On pressing tab, insert 2 spaces
+set expandtab
+" show existing tab with 2 spaces width
+set tabstop=2
+set softtabstop=2
+" when indenting with '>', use 2 spaces width
+set shiftwidth=2
 
 inoremap <C-A> <Home>
 inoremap <C-E> <End>
