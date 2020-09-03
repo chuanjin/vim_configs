@@ -15,6 +15,6 @@ endtry' > ~/.vimrc
 
 vim +PlugInstall +qall
 
-~/.vim/plugged/YouCompleteMe/install.py
+# ~/.vim/plugged/YouCompleteMe/install.py
 
 echo "Installed successfully! Enjoy :-)"
