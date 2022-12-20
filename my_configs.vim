@@ -68,7 +68,8 @@ let g:gitgutter_enabled = 1
 
 " Colorscheme
 " colorscheme nord
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme gruvbox-material
 " colorscheme snazzy
 if has('gui_running')
     set background=dark
