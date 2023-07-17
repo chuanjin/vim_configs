@@ -22,7 +22,7 @@ au FileType python map <buffer> <leader>D ?def
 """"""""""""""""""""""""""""""
 " => JavaScript section
 """""""""""""""""""""""""""""""
-au FileType javascript call JavaScriptFold()
+" au FileType javascript call JavaScriptFold()
 au FileType javascript setl fen
 au FileType javascript setl nocindent
 
