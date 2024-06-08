@@ -22,6 +22,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'airblade/vim-gitgutter'
 Plug 'morhetz/gruvbox'
 Plug 'sainnhe/gruvbox-material'
+Plug 'folke/tokyonight.nvim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'connorholyday/vim-snazzy'
 Plug 'dense-analysis/ale'
@@ -56,4 +57,5 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 " Always load the vim-devicons as the last one
 Plug 'ryanoasis/vim-devicons'
+Plug 'junegunn/vim-emoji'
 call plug#end()

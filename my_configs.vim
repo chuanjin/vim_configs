@@ -36,6 +36,9 @@ set softtabstop=2
 " when indenting with '>', use 2 spaces width
 set shiftwidth=2
 
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/bin/python3'
+
 inoremap <C-A> <Home>
 inoremap <C-E> <End>
 vnoremap <C-A> <Home>
@@ -70,6 +73,7 @@ let g:gitgutter_enabled = 1
 " colorscheme nord
 " colorscheme gruvbox
 colorscheme gruvbox-material
+" colorscheme tokyonight-moon
 " colorscheme snazzy
 if has('gui_running')
     set background=dark
